@@ -36,7 +36,7 @@ function h($v){
 	</div>
 	<div class="check">
         <?= isset($_POST['uname'])&&$_POST['uname']?'あなたの名前は'.h($_POST['uname']).'さんですね':'';  ?>
-        <?= isset($_POST['age'])&&$_POST['age']?'あなたの年齢は'.$age[$_POST['age']].'ですね':'';  ?>
+        <?= isset($_POST['age'])&& $_POST['age']!=='0'?'あなたの年齢は'.$age[$_POST['age']].'ですね':'';  ?>
 	
 	
 	</div>
